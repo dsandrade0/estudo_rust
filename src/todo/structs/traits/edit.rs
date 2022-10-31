@@ -1,5 +1,5 @@
 use serde_json::{json, Map, Value};
-use crate::write_to_file;
+use super::super::super::super::state::write_to_file;
 
 pub trait Edit {
     fn set_to_done(&self, title: &String, state: &mut Map<String, Value>) {
